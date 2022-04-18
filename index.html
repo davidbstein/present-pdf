@@ -68,7 +68,7 @@
         }
       })();
       const loadPreso = async function (url) {
-        document.getElementById("splash").innerText = "Loading...";
+        document.getElementById("splash").innerHTML = `<div>Loading...</div><a href='${url}'>Click here if loading fails</a>`;
         const canvas = document.getElementById("container");
         let pageNum = 1;
         const pdfDoc = await pdfjsLib
