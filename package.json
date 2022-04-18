@@ -1,0 +1,22 @@
+{
+  "name": "present-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidbstein/present-pdf.git"
+  },
+  "author": "David Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidbstein/present-pdf/issues"
+  },
+  "homepage": "https://github.com/davidbstein/present-pdf#readme",
+  "dependencies": {
+    "pdfjs": "^2.4.7"
+  }
+}
