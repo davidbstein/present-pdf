@@ -66,6 +66,15 @@
         for (const preso of presos) {
           presoList.innerHTML += `<div class='preso' onclick="loadPreso('${preso[1]}')">${preso[0]}</div>`
         }
+        document.addEventListener('fullscreenchange', exitHandler, false);
+        document.addEventListener('mozfullscreenchange', exitHandler, false);
+        document.addEventListener('MSFullscreenChange', exitHandler, false);
+        document.addEventListener('webkitfullscreenchange', exitHandler, false);
+        function exitHandler(){
+         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement)
+           location.reload();
+        }
+
       })();
       const loadPreso = async function (url) {
         document.getElementById("splash").innerHTML = `<div>Loading...</div><a href='${url}'>Click here if loading fails</a>`;
