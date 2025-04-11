@@ -18,10 +18,17 @@
         width: 100%;
       }
       #preso-list {
-        width: 100%;
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: scroll;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
       }
       #preso-list .preso {
         cursor: default;
@@ -31,9 +38,7 @@
         border-radius: .25em;
         box-shadow: 2px 2px 2px 0px #ccc;
         background: #f6f6ff;
-        width: 30%;
         line-height: 1.5em;
-        margin: 1em;
         white-space: pre-wrap;
       }
       #preso-list .preso:hover {
