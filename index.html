@@ -69,7 +69,7 @@
         console.log(presos)
         const presoList = document.getElementById("preso-list")
         for (const preso of presos) {
-          presoList.innerHTML += `<div class='preso' onclick="loadPreso('${preso[1]}')">${preso[0]}</div><a href="preso[1]">download</a>`
+          presoList.innerHTML += `<div class='preso' onclick="loadPreso('${preso[1]}')">${preso[0]}</div><a href="${preso[2] || preso[1]}">download</a>`
         }
         document.addEventListener('fullscreenchange', exitHandler, false);
         document.addEventListener('mozfullscreenchange', exitHandler, false);
